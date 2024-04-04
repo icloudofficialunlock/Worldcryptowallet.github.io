@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion à votre compte crypto</title>
+  <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+  <h1>Connectez-vous à votre compte</h1>
+  <form id="connexion-form">
+    <label for="numero-compte">Numéro de compte</label>
+    <input type="text" id="numero-compte" name="numero-compte" required>
+    <br>
+    <label for="mot-de-passe">Mot de passe</label>
+    <input type="password" id="mot-de-passe" name="mot-de-passe" required>
+    <br>
+    <button type="submit">Se connecter</button>
+  </form>
+  <script>
+    const numeroCompteElement = document.getElementById("numero-compte");
+    const motDePasseElement = document.getElementById("mot-de-passe");
+
+document.getElementById("connexion-form").addEventListener("submit", (event) => {
+  // Fonction pour gérer la connexion
+  event.preventDefault();
+
+  const numeroCompte = numeroCompteElement.value;
+  const motDePasse = motDePasseElement.value;
+
+  // Vérifier les informations de connexion (ici, remplacer par une vraie vérification)
+  if (numeroCompte === "37365527" && motDePasse === "companyktd9") {
+    // Redirection vers la page suivante
+    window.location.href = "compte.html";
+  } else {
+    alert("Informations de connexion incorrectes.");
+  }
+});
+  </script>
+</body>
+</html>

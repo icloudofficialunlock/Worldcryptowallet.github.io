@@ -1,0 +1,110 @@
+/* Couleurs générales */
+
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #444;
+  }
+  
+  /* Boutons */
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0069d9;
+  }
+  
+  button:active {
+    background-color: #0057b2;
+  }
+  
+  /* Bouton "Confirmer" */
+  
+  #confirmer-retrait {
+    background-color: #28a745;
+  }
+  
+  #confirmer-retrait:hover {
+    background-color: #218838;
+  }
+  
+  #confirmer-retrait:active {
+    background-color: #1a692b;
+  }
+  
+  /* Tableau des transactions */
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+  
+  th {
+    text-align: center;
+  }
+  
+  /* Fond du tableau */
+  
+  #transactions-table {
+    background-color: #fff;
+  }
+  
+  /* Formulaire de retrait */
+  
+  #retrait-form {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Champs du formulaire */
+  
+  #retrait-montant, #retrait-adresse {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Zone de confirmation de retrait */
+  
+  #confirmation-retrait {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Zone de paiement des frais de retrait */
+  
+  #paiement-retrait {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

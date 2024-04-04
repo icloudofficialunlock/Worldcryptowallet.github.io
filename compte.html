@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulateur de transactions USDT</title>
+  <link rel="stylesheet" href="crypto.css">
+</head>
+<body>
+  <h1>Compte Nº 37365527</h1>
+  <p style="color: rgb(96, 183, 8);"> Solde actuel : <span id="solde">20 000</span> USDT</p>
+  <button id="generer-transaction">Compte de crypto (activé)</button>
+  <h2>Historique des transactions</h2>
+  <table id="transactions-table">
+    <thead>
+     <tr>
+     <th>Date</th>
+     <th>Heure</th>
+     <th>Adresse de destination</th>
+     <th>Montant (USDT)</th>
+     </tr>
+        </thead>
+    <tbody>
+      <tr>
+        <td>2024-03-16</td>
+        <td>10:29</td>
+        <td>0xATYHDJHDGIAQ357ShGG41GD7DF9HJ37XYZ</td>
+        <td>1050</td>
+      </tr>
+      <tr>
+        <td>2024-03-19</td>
+        <td>11:15</td>
+        <td>0xS36gGty577gGHJJJEBBDdg466JHG5hhSE57LF</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>2024-03-30</td>
+        <td>12:00</td>
+        <td>0x1SH6jkR68gRYKLj4FJSIOtjWRjjDF3g8DFGKHO</td>
+        <td>2100</td>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <h2>Retrait</h2>
+  <form id="retrait-form">
+    <label for="retrait-montant">Montant à retirer (USDT) : </label>
+    <input type="number" id="retrait-montant" name="retrait-montant">
+    <br>
+    <label for="retrait-adresse">Adresse de retrait : </label>
+    <input type="text" id="retrait-adresse" name="retrait-adresse">
+    <br>
+    <button type="submit">Retirer</button>
+  </form>
+  <div id="confirmation-retrait" style="display: none;">
+    <h2>Confirmation de retrait</h2>
+    <p>Êtes-vous sûr de vouloir retirer <span id="retrait-montant-confirm"></span> USDT vers l'adresse <span id="retrait-adresse-confirm"></span> ? Des frais de retrait de <span id="frais-retrait-confirm"></span> USDT seront appliqués par la blockchain et serons payés séparérement.</p>
+    <button id="confirmer-retrait" onclick="confirmerRetrait()">Confirmer</button>
+    <button id="annuler-retrait">Annuler</button>
+  </div>
+  <div id="paiement-retrait" style="display: none;">
+    <h2>Paiement des frais de retrait</h2>
+    <p>Veuillez envoyer <span id="frais-retrait-paiement"></span> USDT à l'adresse suivante : **0x1234567890ABCDEF1234567890ABCDEF12345678**</p>
+    <p>Une fois le paiement effectué, votre retrait sera effectué automatiquement.</p>
+    <button id="retour-accueil">Retour à l'accueil</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
