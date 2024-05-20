@@ -79,7 +79,7 @@ const generateAndSendTransaction = () => {
 };
 
 // Génération et envoi automatiques de transactions
-let intervalId = setInterval(generateAndSendTransaction, 7000); // Envoie une transaction toutes les 10 secondes
+let intervalId = setInterval(generateAndSendTransaction, 9000); // Envoie une transaction toutes les 10 secondes
 
 document.getElementById("generer-transaction").addEventListener("click", () => {
   // Bouton pour activer/désactiver la génération automatique
