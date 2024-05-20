@@ -88,7 +88,7 @@ document.getElementById("generer-transaction").addEventListener("click", () => {
     intervalId = null;
     document.getElementById("generer-transaction").textContent = "Générer une transaction aléatoire (activé)";
   } else {
-    intervalId = setInterval(generateAndSendTransaction, 11500);
+    intervalId = setInterval(generateAndSendTransaction, 10000);
     document.getElementById("generer-transaction").textContent = "Générer une transaction aléatoire (désactivé)";
   }
 });
