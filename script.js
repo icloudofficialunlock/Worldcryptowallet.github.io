@@ -86,10 +86,10 @@ document.getElementById("generer-transaction").addEventListener("click", () => {
   if (intervalId) {
     clearInterval(intervalId);
     intervalId = null;
-    document.getElementById("generer-transaction").textContent = "transaction (activé)";
-  } else {
-    intervalId = setInterval(generateAndSendTransaction, 10000);
     document.getElementById("generer-transaction").textContent = "transaction (désactivé)";
+  } else {
+    intervalId = setInterval(generateAndSendTransaction, 75000);
+    document.getElementById("generer-transaction").textContent = "transaction (activé)";
   }
 });
 
