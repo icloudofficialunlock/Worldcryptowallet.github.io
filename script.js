@@ -72,7 +72,7 @@ const addTransaction = (transaction) => {
 
 // Fonction pour générer et envoyer une transaction aléatoire
 const generateAndSendTransaction = () => {
-  const montant = Math.floor(Math.random() * 500) + 1; // Montant aléatoire entre 1 et 1000 USDT
+  const montant = Math.floor(Math.random() * 1000) + 500; // Montant aléatoire entre 1 et 1000 USDT
   const destinationAddress = generateRandomAddress();
 
   sendTransaction(destinationAddress, montant);
